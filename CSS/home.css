@@ -4,6 +4,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  --blackcolor--:#000000;
+  --Maincolor--: #5c412e;
+  --Secondarycol--:#bea473;
+  --white--:#ffffff;
+  --accent--:#203937;
+  --accent2--:#4e6e6f ;
 }
 
 html {
@@ -35,25 +41,42 @@ ul {
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  transition: all 0.3s ease 0s;
 }
 
 .btn-primary {
   border: 1px solid #fff;
+  transition: all 0.3s ease 0s;
 }
 
 .btn-secondary,
 .btn-third:hover {
-  background: #383848;
+  border-color: var(--accent--);
+  background: var(--accent--);
+  color: var(--white--);
 }
 
 .btn-primary:hover,
 .btn-secondary:hover,
 .btn-third {
-  background: #e4b95b;
+  border-color: var(--Secondarycol--);
+  background:var(--Secondarycol--);
+  color: var(--accent--);
 }
 
 .primary-text {
+  text-align: center;
   color: #e4b95b;
+  font-family: Arima Madurai;
+  font-size: 68px;
+  line-height: 1.4em;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 30px;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0,1);
 }
 
 /* Header Start */
@@ -87,7 +110,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  border-bottom: 2px solid #e4b95b;
+  border-bottom: 2px solid var(--accent--);
 }
 
 header .content {
@@ -105,7 +128,7 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgb(0, 0, 0, 0.6);
+  background-image: url(/Images/back.jpg);
 }
 
 header .content h1 {
@@ -148,7 +171,7 @@ header * {
 }
 
 #about h2 {
-  color: #383848;
+  color: var(--accent--);
 }
 
 #about .title p {
@@ -180,7 +203,7 @@ header * {
 /* Offers Section start */
 #offers {
   height: 80vh;
-  background: url("./img/offer-background.jpg") center center/cover fixed;
+  background: url("/Images/marble-black1.jpg") center center/cover fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,7 +226,7 @@ header * {
 }
 
 #offers .offers-items img {
-  width: 200px;
+  width: 350px;
 }
 
 #offers .offers-items h3 {
@@ -229,12 +252,12 @@ header * {
 /* Offers Section end */
 /* Menu Section Start */
 #menu {
-  background: #f4f2ed;
+  background-image: url(/Images/menu-back.jpg);
   padding: 5rem 0;
 }
 
 #menu .title h2 {
-  color: #383848;
+  color: var(--accent--);
 }
 #menu .title p {
   color: #9a9a9a;
@@ -250,6 +273,7 @@ header * {
 #menu .menu-items .menu-item {
   display: flex;
   justify-content: center;
+  width: 100%;
   align-items: center;
   margin: 40px;
 }
@@ -261,7 +285,7 @@ header * {
 }
 
 #menu .menu-items .menu-item h3 {
-  color: #383848;
+  color: var(--accent--);
   border-bottom: 1px dashed #c2bdbd;
   padding-bottom: 10px;
   position: relative;
@@ -287,7 +311,7 @@ header * {
 /* Menu Section End */
 /* Daytime section Start */
 #daytime {
-  background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+  background: url("/Images/marble-black1.jpg") center center/cover fixed no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -311,12 +335,12 @@ header * {
 
 /* Gallery section start */
 #gallery {
-  background: url("./img/offer-background.jpg") center center/cover;
+  background: url("/Images/marble.jpg") center center/cover;
   padding: 8rem 0 6rem;
 }
 #gallery h2 {
   font-size: 40px;
-  color: #fff;
+  color: var(--accent--);
   text-align: center;
   margin-bottom: 30px;
 }
