@@ -33,7 +33,7 @@ var menuObjs =[
     desc:"Ground Angus beef, parsley and Aleppo pepper. Gluten free."},
 
     {name:"New-York Pizza",price:"€75.00",
-    img:"/Images/New-York-Style-Pizza.jpg",
+    img:"/Images/menuPizza-MenuNYC-Pizza.jpg",
     desc:"Ground lamb, red onion, thyme and sumac. Served Armenian pilaf, toasted vermicelli, almonds and grilled veggies."},
 
     {name:"Smoked Salmon Pizza",price:"€240.00",
