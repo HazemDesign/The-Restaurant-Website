@@ -11,6 +11,23 @@
   --accent--:#203937;
   --accent2--:#4e6e6f ;
 }
+/* scrollbar------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--Maincolor--); 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--blackcolor--); 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--Secondarycol--); 
+}
 
 html {
   scroll-behavior: smooth;
