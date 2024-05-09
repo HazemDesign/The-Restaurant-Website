@@ -97,13 +97,13 @@ header{
     padding: 0px 20px;
 }
 .nav_links li, .Top_nav{
-    color: var(--blackcolor--);
-    text-shadow: 0px 0px 10px rgba(0, 0, 0,2);
-    transition: background 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;  
+    color: var(--Secondarycol--);
+    text-shadow: 3px 3px 1px var(--blackcolor--)
 }
 .nav_links li, .Top_nav:hover{
-   color: var(--Secondarycol--);
-   text-shadow: 2px 2px 1px var(--blackcolor--)
+   color: var(--blackcolor--);
+   text-shadow: 0px 0px 10px rgba(0, 0, 0,2);
+   transition: background 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;  
 }
 a img .account-button{
     cursor: pointer;
@@ -123,8 +123,8 @@ button{
     cursor: pointer;
     transition: all 0.3s ease 0s;
     color: var(--Secondarycol--);
-    -webkit-box-shadow: 0px 0px 50px 0px rgba(0,0,0,.6); 
-    box-shadow: 0px 0px 50px 0px rgba(0,0,0,.6);
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6); 
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6);
 }
 /* button::before{
     content: url(/Images/cart.png);
@@ -167,9 +167,10 @@ button:hover{
 }
 .headline-content{
     align-items: center;
+    gap: 0px;
+    flex-flow: row;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin: auto;
     max-width: none !important;
     position: relative;
@@ -182,11 +183,10 @@ button:hover{
     max-height: 100%;
     max-width: 100%;
     width: 40%;
-    
 }
 .headline p{
     text-align: center;
-    color: var(--blackcolor--);
+    color: #403231;
     font-family: Lato;
     font-size: 20px;
     font-weight: 700;
@@ -202,7 +202,7 @@ button:hover{
     font-family: Arima Madurai;
     font-size: 68px;
     line-height: 1.4em;
-    font-weight: 500;
+    font-weight: 100;
     text-transform: capitalize;
     margin-top: 0px;
     margin-right: 0px;
@@ -213,7 +213,7 @@ button:hover{
     padding-top: 35px;
     padding-bottom: 35px;
 }
-.Menu-container{
+.Menu-flex{
     flex-direction: column;
     display: flex;
     transition: all .5s, background 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
@@ -232,21 +232,47 @@ button:hover{
     margin-bottom: 60px;
     transition: border 0.5s, border-radius 0.5s, box-shadow 0.5s, background 0.5s;
  }
-.active{
+ .btn{
     background-color: var(--white--);
-    margin-right: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: var(--accent--);
+    border-style: solid;
+    color: var(--blackcolor--);
+    transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s, background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    flex-direction: row;
+    margin-right: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    gap: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6); 
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6);
+}
+ .active, .btn:hover{
+    background-color: var(--accent--);
     margin-bottom: 15px;
     border-radius: 10px;
     border-width: 2px;
     border-color: var(--accent--);
     border-style: solid;
     color: var(--white--);
-    background-color: var(--accent--);
     transition: border 0.3s, border-radius 0.3s, box-shadow 0.3s, background 0.3s;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     text-align: center;
     position: relative;
     flex-direction: row;
@@ -256,49 +282,26 @@ button:hover{
     padding-left: 30px;
     padding-bottom: 15px;
     gap: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6); 
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6);
  }
-.active:hover{
-    background-color: var(--white--);
-    color:var(--blackcolor--)
-}
-.inactive{
-    margin-right: 10px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    text-align: center;
-    position: relative;
-    flex-direction: row;
-    margin-right: 30px;
-    padding-top: 15px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-bottom: 15px;
-    gap: 10px;
-    background-color: var(--white--);
-    border-radius: 10px;
-    border-width: 2px;
-    border-color: var(--accent2--);
-    border-style: solid;
-    transition: all .3s, background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-}
-.inactive:hover{
-    background-color: var(--accent2--);
-    color: var(--white--);
-}
-.gallery-container{
+
+.Menu-container{
     margin-left: -5px;
     margin-right: -5px;
     margin-bottom: -10px;
 }
-.gallery-padding{
+.Menu-padding{
     padding-left: 5px;
     padding-right: 5px;
     margin-bottom: 10px;
 }
-div.gallery {
+div.Menu {
     margin: 2%;
     padding: 0;
     border: 10px solid var(--white--);
@@ -315,17 +318,16 @@ div.gallery {
     opacity: 0;
     transition: all .3s ease 0s;
 }
-div.gallery:hover .Add-to-cart-button {
+div.Menu:hover .Add-to-cart-button {
     opacity: 1;
 }
-div.gallery:hover{
+div.Menu:hover{
     border: 10px solid var(--Secondarycol--);
 }
 .image-container{
     position: relative;
  }
-div.gallery img {
-    /* height: 100%; */
+div.Menu img {
     max-height: 100%;
     max-width: 100%;
     width: 100%;
@@ -354,7 +356,10 @@ div.desc a{
     margin: 0px;
     color: var(--blackcolor--);
   }
-div.desc p{
+.price::before {
+    content: "€";
+}
+div.desc .price{
     font-family: Arima Madurai;
     font-size: 30px;
     color: var(--blackcolor--);
