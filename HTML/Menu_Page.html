@@ -4,6 +4,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="/CSS/Menu.css">
 		<script src="/JavaScript/menuData.js"></script>
+	
 	</head>
 	<body>
 <!--header--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
@@ -46,9 +47,9 @@
 						<div class="Menu-flex">
 							<div class="tabs-nav">
 								<div class="tabTitles"  id="myDIV">
-									<button class="btn active"><h6 class="tab-title-text">All</h6></button>
-									<button class="btn"><h6 class="tab-title-text">Fish</h6></button>
-									<button class="btn"><h6 class="tab-title-text">Pizza</h6></button>
+									<button class="btn active" id="All"><h6 class="tab-title-text">All</h6></button>
+									<button class="btn" id="Fish"><h6 class="tab-title-text">Fish</h6></button>
+									<button class="btn" id="Pizza"><h6 class="tab-title-text">Pizza</h6></button>
 									<button class="btn"><h6 class="tab-title-text">Sandwishes</h6></button>
 									<button class="btn"><h6 class="tab-title-text">Drinks</h6></button>
 									<button class="btn"><h6 class="tab-title-text">Extras</h6></button>
@@ -56,7 +57,7 @@
 							</div>
 							<div class="Menu-container">
 <!-- fish menu ----------------------------------------------->
-							<div class="Fish-Menu">
+							<div class="Fish-Menu" id="Fish-Menu">
 								<div class="Menu-paddeing">	 
 									<div class="Menu">
 												<div class="image-container">
@@ -115,7 +116,7 @@
 								</div>
 							</div>	
 <!-- Pizza menu ---------------------------------------------->
-							<div class="Pizza-Menu">
+							<div class="Pizza-Menu" id="Pizza-Menu">
 								<div class="Menu-paddeing">	 
 									<div class="Menu">
 												<div class="image-container">
@@ -177,7 +178,7 @@
 									<div class="Menu">
 												<div class="image-container">
 													<div class="img">
-														<img src="/images/menu/Pizza-Menu/veggie-pizza.webp" alt="1" width="300" height="300">
+														<img src="/images/menu/Pizza-Menu/veggie-pizza1.jpg" alt="1" width="300" height="300">
 													</div>
 													<div class="button-on-image">
 														<button class="Add-to-cart-button">Add to cart</button>
@@ -215,7 +216,7 @@
 									<div class="Menu">
 												<div class="image-container">
 													<div class="img">
-														<img src="/Images/menu/Pizza-Menu/New-York-Style-Pizza.jpg" alt="1" width="300" height="300">
+														<img src="/Images/menu/Pizza-Menu/NYC-Pizza.jpg" alt="1" width="300" height="300">
 													</div>
 													<div class="button-on-image">
 														<button class="Add-to-cart-button">Add to cart</button>
@@ -297,7 +298,7 @@
 	</div>
 </footer>
 <script>
-// Add active class to the current button (highlight it)
+	// Add active class to the current button (highlight it)
 var header = document.getElementById("myDIV");
 var btns = header.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
@@ -306,6 +307,19 @@ for (var i = 0; i < btns.length; i++) {
   current[0].className = current[0].className.replace(" active", "");
   this.className += " active";
   });
+}
+// Make elements apper on category click
+document.getElementById("All").onclick = function(){
+	document.getElementById("Fish-Menu").style.display="block";
+	document.getElementById("Pizza-Menu").style.display="block";
+}
+document.getElementById("Fish").onclick = function(){
+	document.getElementById("Fish-Menu").style.display="block";
+	document.getElementById("Pizza-Menu").style.display="none";
+}
+document.getElementById("Pizza").onclick = function(){
+	document.getElementById("Pizza-Menu").style.display="block";
+	document.getElementById("Fish-Menu").style.display="none";
 }
 </script>
 	</body>
