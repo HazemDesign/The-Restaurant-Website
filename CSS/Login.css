@@ -3,13 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    list-style-type: none;
-    --blackcolor--:#000000;
-    --Maincolor--: #5c412e;
-    --Secondarycol--:#bea473;
-    --white--:#ffffff;
-    --accent--:#203937;
-    --accent2--:#89d2d5 ;
 }
 
 body{
@@ -17,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('/Images/menu-back.jpg') no-repeat;
+    background: url('/Images/login-imgs/background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -35,10 +28,18 @@ header{
 }
 
 .logo {
-    cursor: pointer;
-    width: 10%;
-    -webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,1));
-    filter: drop-shadow(0px 0px 10px rgba(0,0,0,1));
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 700;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 80px;
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    user-select: none;
 }
 
 .navigation a{
@@ -87,9 +88,9 @@ header{
 }
 
 .navigation .btnLogin:hover{
-    border:2px solid var(--accent--);
-    background: var(--accent--);
-    color: var(--white--);
+    border:2px solid #fff;
+    background: #fff;
+    color: #162938;
 }
 
 
@@ -100,14 +101,10 @@ header{
     position: relative;
     width: 400px;
     height: 440px;
-    /* background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)),url(/Images/back.jpg); */
-    background-repeat: no-repeat, repeat;
-    padding: 15px;
-    position: relative;
-    object-fit: cover;
-    border: 2px solid var(--accent--);
+    background-color: #111111;
+    border: 2px solid #162938;
     border-radius: 20px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
@@ -157,9 +154,9 @@ header{
     right: 0;
     width: 45px;
     height: 45px;
-    background: var(--Secondarycol--);
+    background: #ff9f0d;
     font-size: 2em;
-    color: var(--accent--);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,21 +166,17 @@ header{
 }
 
 .form-box h2{
-    text-shadow: 0px 0px 5px rgba(0, 0, 0,.2);
     font-size: 2em;
-    color: var(--accent--);
+    color: #ff9f0d;
     text-align: center;
-    
 }
 
 .input-box{
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid var(--Secondarycol--);
+    border-bottom: 2px solid #ff9f0d;
     margin: 30px 0;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0,1);  
-    
 }
 
 .input-box label{
@@ -192,8 +185,7 @@ header{
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: var(--Secondarycol--);
-    text-shadow: 0px 0px 5px rgba(0, 0, 0,.2);
+    color: #ff9f0d;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -220,21 +212,17 @@ header{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: var(--Secondarycol--);
-    -webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,.2));
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,.2));
+    color: #ff9f0d;
     line-height: 57px;
 }
 
 .remember-forgot{
     font-size: .9em;
-    color: var(--Secondarycol--);
+    color: #ff9f0d;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
-    justify-content: space-between;  
-    text-shadow: 0px 0px 5px rgba(0, 0, 0,.2);
-    
+    justify-content: space-between;
 }
 
 .remember-forgot label input{
@@ -243,8 +231,7 @@ header{
 }
 
 .remember-forgot a{
-    color: var(--Secondarycol--);
-    
+    color: #ff9f0d;
     text-decoration: none;
 }
 
@@ -255,26 +242,26 @@ header{
 .btn{
     width: 100%;
     height: 45px;
-    background: var(--Secondarycol--);
+    background: #ff9f0d;
     border: none;
     outline: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 1.1em;
-    color:var(--accent--);
+    color: #fff;
     font-weight: 500;
 }
 
 .register-link{
     font-size: .9em;
-    color: var(--Secondarycol--);
+    color: #ff9f0d;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .register-link p a{
-    color: var(--accent--);
+    color: #ff9f0d;
     text-decoration: none;
     font-weight: 600;
 }
@@ -285,14 +272,14 @@ header{
 
 .login-link{
     font-size: .9em;
-    color: var(--Secondarycol--);
+    color: #ff9f0d;
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-link p a{
-    color: var(--accent--);
+    color: #ff9f0d;
     text-decoration: none;
     font-weight: 600;
 }
