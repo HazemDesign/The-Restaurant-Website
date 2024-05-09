@@ -3,10 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/Style.css">
     <title>Document</title>
-    <script src="menuData.js"></script>
+    <script src="JavaScript\menuData.js"></script>
 </head>
 <body>
+   <div class="headline-wrapper">
+      <div class="headline">
+         <div class="headline-inner">
+            <div class="headline-content">
+               <div class="headline-img"><img src="/Images/headline.jpg" alt="" class="headlineImg">
+               </div>
+               <div class="headline-text">
+                  <p class="title">welcome to 👋 Sidi</p>
+                  <h1>Our Menu</h1>
+               </div>
+               <div class="headline-img"><img src="/Images/headline.jpg" alt="" class="headlineImg">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<div class="Background-2">
+            <div class="menu-wrapper">	  
+               <div class="Menu-container">
+                  <div class="tabs-nav">
+                     <ul class="tabTitles" data-tabs-ul-id="	">
+                        <li data-title-tab-id="1" class="active" onclick="active()" ><h6 class="tab-title-text">All</h6></li>
+                        <li data-title-tab-id="2" class="inactive" onclick="active2()" ><h6 class="tab-title-text">Fish</h6></li>
+                        <li data-title-tab-id="3" class="inactive"   onclick="active3()" ><h6 class="tab-title-text">Pizza</h6></li>
+                        <li data-title-tab-id="4" class="inactive" onclick="active4()" ><h6 class="tab-title-text">Sandwishs</h6></li>
+                        <li data-title-tab-id="5" class="inactive" onclick="active5()" ><h6 class="tab-title-text">Drinks</h6></li>
+                        <li data-title-tab-id="6" class="inactive" onclick="active6()" ><h6 class="tab-title-text">Extras</h6></li>
+                     </ul>	
+                  </div>
+                  <div class="gallery-container">
  <div class="page">
     <img id="imgId" height="300">
     <hr>
@@ -17,7 +50,7 @@
     <div class="Order"><h3>Add To Order</h3>  <form action=""><input type="number" max="100" min="0"></form></div>
  </div>
  <script>
-    document.getElementById("imgId").src=menuObjs[8].img
+    document.getElementById("imgId").src=menuObjs[4].img
  </script>
 </body>
 </html></i>
