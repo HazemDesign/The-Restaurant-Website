@@ -372,9 +372,9 @@ div.Menu {
     opacity: 0;
     transition: all .3s ease 0s;
 } */
-div.Menu:hover .Add-to-cart-button {
+/* div.Menu:hover .Add-to-cart-button {
     opacity: 1;
-}
+} */
 div.Menu:hover{
     border: 10px solid var(--Secondarycol--);
 }
@@ -612,15 +612,10 @@ footer{
 .snipcart-add-item {
     opacity: 0;
     display: flex;
-    color: #fff;
-    color: var(--color-buttonPrimary,#fff);
-    border-color: transparent;
-    border-color: var(--borderColor-buttonPrimary,transparent);
-    background-color: #1a4db3;
-    background-color: var(--bgColor-buttonPrimary,#1a4db3);
-    padding: 16px;
-    border: 1px solid;
-    border-radius: 4px;
+    color: var(--Secondarycol--);
+    color: var(--color-buttonPrimary,var(--Secondarycol--));
+    background-color: var(--blackcolor--);
+    background-color: var(--bgColor-buttonPrimary,var(--blackcolor--));
     cursor: pointer;
     transition: .2s ease-out;
     transition-property: color,border-color,background-color,box-shadow;
