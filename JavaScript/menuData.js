@@ -1,7 +1,7 @@
 var menuObjs = [
     {
         name: "Sayadieh fish-rice", price: "€120.00",
-        img: "Images/menu/Fish-Menu/Sayadieh-fish-and-rice1.jpg",
+        img: "/Images/menu/Fish-Menu/Sayadieh-fish-and-rice1.jpg",
         desc: "Roasted eggplant, garlic, tahini, lemon and extra virgin olive oil. Gluten free and vegan."
     },
 
@@ -60,18 +60,32 @@ var menuObjs = [
         desc: "Armenian beef dumpling, garlic yogurt sauce and sumac."
     },
 ];
+var btn1 = document.getElementById("0");
+btn1.onclick=cart(0);
+// document.getElementById("1").onclick=cart(1); 
+// document.getElementById("2").onclick=cart(2);
+// document.getElementById("3").onclick=cart(3);
+// document.getElementById("4").onclick=cart(4);
+// document.getElementById("5").onclick=cart(5);
+// document.getElementById("6").onclick=cart(6);
+// document.getElementById("7").onclick=cart(7);
+// document.getElementById("8").onclick=cart(8);
+// document.getElementById("9").onclick=cart(9);
 
-//var count =0; 
+
 var menuIndex;
-// var cartIndex=0;
 
+var recObjs =[];
 
-function cart(menuIndex) {
-
-    var recObjs=[];
-    recObjs.push(menuObjs[menuIndex]);
-    console.log(recObjs[0].img);
+ function cart(menuIndex) {
+    
+    
+    recObjs[0]=menuObjs[menuIndex];
+    
+   console.log(recObjs[menuIndex]);
+   console.log(0);
     return recObjs;
+    
 };
-var cartObjs = cart(menuIndex);
-console.log(cartObjs[0].img);
+
+ 
