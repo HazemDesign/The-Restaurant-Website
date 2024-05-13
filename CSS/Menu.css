@@ -103,7 +103,6 @@ header{
     color: var(--Secondarycol--);
     text-shadow: 2px 3px 1px var(--blackcolor--);
     transition: all 0.2s ease 0s;
-    
 }
 .nav_links li, .Top_nav:hover{
    color: var(--accent2--);
@@ -112,13 +111,37 @@ header{
 }
 a img .account-button{
     cursor: pointer;
+    
 }
 
+.dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-options {
+    z-index: 5;
+    display: block;
+    position: absolute;
+    overflow: auto;
+   display: inline;
+    
+    
+  }  
+.logout-btn,.snipcart-checkout{
+    border:none;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius:5px;
+    padding:10px 10px;
+    font-size:1px;
+    cursor:pointer;
+}
 button{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-size: 20px;
     text-decoration: none;
+    a:visited { text-decoration: none; }
     padding: 9px 20px;
     background-color: var(--blackcolor--);
     border: none;
