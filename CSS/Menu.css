@@ -123,8 +123,6 @@ a img .account-button{
     display: block;
     position: absolute;
     overflow: auto;
-   display: inline;
-    
     
   }  
 .logout-btn,.snipcart-checkout{
