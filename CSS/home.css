@@ -64,6 +64,7 @@ ul {
 .btn-primary {
   border: 1px solid #fff;
   transition: all 0.3s ease 0s;
+  font-weight: 900;
 }
 
 .btn-secondary,
@@ -84,7 +85,7 @@ ul {
 .primary-text {
   text-align: center;
   color: #e4b95b;
-  font-family: Arima Madurai;
+  font-family: OPTIMA;
   font-size: 68px;
   line-height: 1.4em;
   font-weight: 500;
@@ -101,6 +102,7 @@ header {
   height: 100vh;
   background: url("./img/home_bg.jpeg") center center/cover no-repeat;
   position: relative;
+  padding: 20px 3%;
 }
 
 #navbar {
@@ -112,8 +114,11 @@ header {
 }
 
 #navbar img {
-  width: 80px;
+  cursor: pointer;
+  width: 7%;
   margin-left: 100px;
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(0,0,0,1));
+  filter: drop-shadow(0px 0px 10px rgba(0,0,0,1));
 }
 
 nav ul {
@@ -122,12 +127,19 @@ nav ul {
 }
 
 nav ul li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #ecf0f1;
+  text-decoration: none;
+  background-color: transparent;
+
   padding: 15px 20px;
   font-weight: 600;
 }
 
 nav ul li a:hover {
-  border-bottom: 2px solid var(--accent--);
+  border-bottom: 3px solid var(--accent--);
 }
 
 header .content {
@@ -149,6 +161,8 @@ header::before {
 }
 
 header .content h1 {
+  font-family: Arima Madurai;
+  font-weight: 100;
   font-size: 40px;
   color: #fff;
 }
