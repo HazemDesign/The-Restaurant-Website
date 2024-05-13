@@ -42,11 +42,14 @@ body {
     background-repeat: no-repeat;
     padding: 15px;
     width: 100%;
-    /* min-height: 150vh !important; */
+    min-height: 100vh !important;
+  
     height: auto;
     object-fit: fill;
     background-size: cover;
     background-position: center;
+    transition: all .3s ease 0s;
+    transition-property: background-image; 
 }
 /* scrollbar------------- */
 /* width */
