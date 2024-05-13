@@ -12,7 +12,7 @@ var menuObjs = [
     },
 
     {
-        name: "Molokhea and fish", price: "€85.00",
+        name: "Molokhea and fish", price: "€80.00",
         img: "/Images/menu/Fish-Menu/fish with molokhea1.jpg",
         desc: "Purslane, romaine lettuce, cucumber, tomatoes, radish, mint, pita chips, sumac, pomegranate, lemon and extra virgin olive oil. Vegan."
     }
