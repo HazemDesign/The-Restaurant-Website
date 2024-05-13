@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    --blackcolor--:#000000;
+    --Maincolor--: #5c412e;
+    --Secondarycol--:#bea473;
+    --white--:#ffffff;
+    --accent--:#203937;
+    --accent2--:#4e6e6f ;
 }
 
 body{
@@ -10,7 +16,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('/Images/login-imgs/background.jpg') no-repeat;
+    background: url('/Images/menu-back.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -20,7 +26,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px;
+    padding: 60px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,9 +36,6 @@ header{
 .logo {
     display: flex;
     align-items: center;
-    font-size: 35px;
-    font-weight: 700;
-    color: #fff;
     top: 0;
     left: 0;
     width: 20px;
@@ -45,7 +48,7 @@ header{
 .navigation a{
     position: relative;
     font-size: 1.1em;
-    color: #162938;
+    color: var(--accent--);
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
@@ -58,7 +61,7 @@ header{
     position: absolute;
     width: 100%;
     height: 3px;
-    background: #162938;
+    background: var(--accent--);
     transform-origin: right;
     border-radius: 5px;
     transform: scaleX(0);
@@ -75,7 +78,7 @@ header{
     width: 130px;
     height: 50px;
     background: transparent;
-    border:2px solid #162938;
+    border:2px solid var(--accent--);
     outline: none;
     border-radius: 6px;
     cursor: pointer;
@@ -88,23 +91,18 @@ header{
 }
 
 .navigation .btnLogin:hover{
-    border:2px solid #fff;
-    background: #fff;
-    color: #162938;
+    border:2px solid var(--accent--);
+    background: var(--accent--);
+    color: var(--white--);
 }
-
-
-
-
-
 .wrapper{
     position: relative;
     width: 400px;
     height: 440px;
-    background-color: #111111;
-    border: 2px solid #162938;
+    background-color: #ffffff00;
+    border: 2px solid var(--accent--);
     border-radius: 20px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5);
     display: flex;
     justify-content: center;
@@ -154,7 +152,7 @@ header{
     right: 0;
     width: 45px;
     height: 45px;
-    background: #ff9f0d;
+    background: var(--accent--);
     font-size: 2em;
     color: #fff;
     display: flex;
@@ -167,7 +165,7 @@ header{
 
 .form-box h2{
     font-size: 2em;
-    color: #ff9f0d;
+    color: var(--accent--);
     text-align: center;
 }
 
@@ -175,7 +173,7 @@ header{
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #ff9f0d;
+    border-bottom: 2px solid var(--accent--);
     margin: 30px 0;
 }
 
@@ -185,7 +183,7 @@ header{
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #ff9f0d;
+    color: var(--accent--);
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -212,13 +210,13 @@ header{
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #ff9f0d;
+    color: var(--accent--);
     line-height: 57px;
 }
 
 .remember-forgot{
     font-size: .9em;
-    color: #ff9f0d;
+    color: var(--accent--);
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -231,7 +229,7 @@ header{
 }
 
 .remember-forgot a{
-    color: #ff9f0d;
+    color: var(--accent--);
     text-decoration: none;
 }
 
@@ -242,7 +240,7 @@ header{
 .btn{
     width: 100%;
     height: 45px;
-    background: #ff9f0d;
+    background: var(--accent--);
     border: none;
     outline: none;
     border-radius: 8px;
@@ -254,14 +252,14 @@ header{
 
 .register-link{
     font-size: .9em;
-    color: #ff9f0d;
+    color: var(--accent--);
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .register-link p a{
-    color: #ff9f0d;
+    color: var(--Secondarycol--);
     text-decoration: none;
     font-weight: 600;
 }
@@ -272,18 +270,25 @@ header{
 
 .login-link{
     font-size: .9em;
-    color: #ff9f0d;
+    color: var(--accent--);
     text-align: center;
     font-weight: 500;
     margin: 25px 0 10px;
 }
 
 .login-link p a{
-    color: #ff9f0d;
+    color: var(--Secondarycol--);
     text-decoration: none;
     font-weight: 600;
 }
 
 .login-link p a:hover{
     text-decoration: underline;
+}
+.clock{
+    
+    align-items: center;
+    position: absolute;
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
 }
