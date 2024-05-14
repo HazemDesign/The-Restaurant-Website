@@ -175,10 +175,11 @@ ul {
 /* Header Start */
 header {
   height: 100vh;
-  background: url("./img/home_bg.jpeg") center center/cover no-repeat;
   position: relative;
   padding: 20px 3%;
+
 }
+
 
 #navbar {
   display: flex;
