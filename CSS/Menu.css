@@ -113,27 +113,41 @@ a img .account-button{
     cursor: pointer;
     
 }
-
-.dropdown {
-    display: inline-block;
-    position: relative;
-  }
-  .dropdown-options {
-    z-index: 5;
-    display: block;
-    position: absolute;
-    overflow: auto;
-    
-  }  
 .logout-btn,.snipcart-checkout{
     border:none;
     margin-top: 10px;
     margin-left: 5px;
     border-radius:5px;
     padding:10px 10px;
-    font-size:1px;
+    font-size:20px;
     cursor:pointer;
+    transition: all 0.3s ease 0s;
 }
+.dropbtn {
+    background-color: var(--blackcolor--);
+    color: var(--Secondarycol--);
+    border: none;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+background-color: var(--white--);
+color: var(--accent--);
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f100;
+overflow: auto;
+align-items: center;
+z-index: 1;
+}
+.show {display: block;}
 button{
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
@@ -150,14 +164,6 @@ button{
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6); 
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6);
 }
-/* button::before{
-    content: url(/Images/cart.png);
-    height: 5px ;
-    width: 5px;
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    padding-right: 8px;
-} */
 button:hover{
     background-color: var(--Secondarycol--);
     color: var(--blackcolor--);
@@ -172,9 +178,7 @@ button:hover{
     align-items: center;
   }
   
-#about .title,
-#offers .title,
-#menu .title {
+#about .title,#offers .title,#menu .title {
 text-align: center;
 margin-bottom: 4rem;
 }

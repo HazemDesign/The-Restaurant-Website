@@ -18,15 +18,15 @@
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--Maincolor--); 
+background: var(--accent2--); 
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--blackcolor--); 
+background: var(--Secondarycol--); 
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--Secondarycol--); 
+background: var(--blackcolor--); 
 }
 
 html {
@@ -50,6 +50,71 @@ ul {
   max-width: 1100px;
   margin: auto;
 }
+
+.logout-btn,.snipcart-checkout{
+  border:none;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius:5px;
+  padding:10px 10px;
+  font-size:20px;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  a:visited { text-decoration: none; }
+  padding: 9px 20px;
+  background-color: var(--blackcolor--);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: var(--Secondarycol--);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6); 
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6);
+}
+.dropbtn {
+  background-color: var(--blackcolor--);
+  color: var(--Secondarycol--);
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: none;
+  a:visited { text-decoration: none; }
+  padding: 9px 20px;
+  background-color: var(--blackcolor--);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: var(--Secondarycol--);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6); 
+  box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6);
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: var(--white--);
+color: var(--accent--);
+}
+
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f1f1f100;
+overflow: auto;
+align-items: center;
+z-index: 1;
+transition: all 0.3s ease 0s;
+}
+.show {display: block;}
 
 
 /* Utility Classes */
