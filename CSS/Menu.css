@@ -50,6 +50,7 @@ body {
     background-position: center;
     transition: all .3s ease 0s;
     transition-property: background-image; 
+    transition: background 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
 }
 /* scrollbar------------- */
 /* width */

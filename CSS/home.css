@@ -37,6 +37,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+
 a {
   text-decoration: none;
   color: #fff;
@@ -75,6 +76,14 @@ ul {
   -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6); 
   box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6);
 }
+.snipcart-checkout:hover{
+  background-color: var(--Secondarycol--);
+  color: var(--blackcolor--);
+}
+.logout-btn:hover{
+  background-color: var(--Secondarycol--);
+  color: var(--blackcolor--);
+}
 .dropbtn {
   background-color: var(--blackcolor--);
   color: var(--Secondarycol--);
@@ -97,22 +106,22 @@ ul {
 }
 
 .dropbtn:hover, .dropbtn:focus {
-background-color: var(--white--);
-color: var(--accent--);
+  background-color: var(--white--);
+  color: var(--accent--);
 }
 
 .dropdown {
-position: relative;
-display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .dropdown-content {
-display: none;
-position: absolute;
-background-color: #f1f1f100;
-overflow: auto;
-align-items: center;
-z-index: 1;
-transition: all 0.3s ease 0s;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f100;
+  overflow: auto;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.3s ease 0s;
 }
 .show {display: block;}
 
@@ -193,19 +202,22 @@ nav ul {
 }
 
 nav ul li a {
+  color: var(--Secondarycol--);
+  text-shadow: 2px 3px 1px var(--blackcolor--);
+  transition: all 0.2s ease 0s;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  font-size: 15px;
-  color: #ecf0f1;
+  font-size: 25px;
   text-decoration: none;
   background-color: transparent;
-
-  padding: 15px 20px;
-  font-weight: 600;
+  backdrop-filter: blur(10px);
+  padding: 0px 20px;
 }
 
 nav ul li a:hover {
-  border-bottom: 3px solid var(--accent--);
+  color: var(--accent2--);
+   text-shadow: 3px 3px 1px rgba(0, 0, 0,2);
+   transition: all 0.2s ease 0s;
 }
 
 header .content {
