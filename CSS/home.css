@@ -236,7 +236,7 @@ header::before {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(/Images/back.jpg);
+  background-image: url(../Images/back.jpg);
 }
 
 header .content h1 {
@@ -313,7 +313,7 @@ header * {
 /* Offers Section start */
 #offers {
   height: 80vh;
-  background: url("/Images/marble-black1.jpg") center center/cover fixed;
+  background: url("../Images/marble-black1.jpg") center center/cover fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,7 +362,7 @@ header * {
 /* Offers Section end */
 /* Menu Section Start */
 #menu {
-  background-image: url(/Images/menu-back.jpg);
+  background-image: url(../Images/menu-back.jpg);
   padding: 5rem 0;
 }
 
@@ -421,7 +421,7 @@ header * {
 /* Menu Section End */
 /* Daytime section Start */
 #daytime {
-  background: url("/Images/marble-black1.jpg") center center/cover fixed no-repeat;
+  background: url("../Images/marble-black1.jpg") center center/cover fixed no-repeat;
   color: #fff;
   text-align: center;
 }
@@ -445,7 +445,7 @@ header * {
 
 /* Gallery section start */
 #gallery {
-  background: url("/Images/marble.jpg") center center/cover;
+  background: url("../Images/marble.jpg") center center/cover;
   padding: 8rem 0 6rem;
 }
 #gallery h2 {
