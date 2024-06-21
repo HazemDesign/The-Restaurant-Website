@@ -38,7 +38,7 @@ body {
 }
 .Background-2{
     /* background-image: radial-gradient(circle, var(--Secondarycol--) 20%, var(--Maincolor--) 120%); */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.45)),url(../Images/menu-back.jpg);
+    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1)),url(../Images/menu-back.jpg);
     background-repeat: no-repeat;
     padding: 15px;
     width: 100%;
