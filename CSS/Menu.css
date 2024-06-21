@@ -26,7 +26,7 @@ body {
     height: auto;
 }
 .Background {
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)),url(/Images/back.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)),url(../Images/back.jpg);
     background-repeat: no-repeat, repeat;
     padding: 15px;
     position: relative;
@@ -38,7 +38,7 @@ body {
 }
 .Background-2{
     /* background-image: radial-gradient(circle, var(--Secondarycol--) 20%, var(--Maincolor--) 120%); */
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.45)),url(/Images/menu-back.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.45)),url(../Images/menu-back.jpg);
     background-repeat: no-repeat;
     padding: 15px;
     width: 100%;
@@ -154,7 +154,7 @@ button{
     font-weight: 600;
     font-size: 20px;
     text-decoration: none;
-    a:visited { text-decoration: none; }
+ 
     padding: 9px 20px;
     background-color: var(--blackcolor--);
     border: none;
@@ -164,6 +164,7 @@ button{
     color: var(--Secondarycol--);
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6); 
     box-shadow: 0px 0px 10px 1px rgba(0,0,0,.6);
+    a:visited { text-decoration: none; }
 }
 button:hover{
     background-color: var(--Secondarycol--);
