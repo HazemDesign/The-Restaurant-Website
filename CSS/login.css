@@ -286,9 +286,9 @@ header{
     text-decoration: underline;
 }
 .clock{
-    
+    background-color: transparent;
     align-items: center;
     position: absolute;
-    /* -webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
-    filter: drop-shadow(0px 0px 5px rgba(0,0,0,1)); */
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,1));
 }
