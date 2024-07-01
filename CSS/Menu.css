@@ -125,7 +125,7 @@ a img .account-button{
     transition: all 0.3s ease 0s;
 }
 .dropbtn {
-    background-color: var(--blackcolor--);
+    background-color: var(--accent--);
     color: var(--Secondarycol--);
     border: none;
     cursor: pointer;
