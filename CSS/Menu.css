@@ -7,9 +7,9 @@
     list-style-type: none;
     --blackcolor--:#000000;
     --Maincolor--: #5c412e;
-    --Secondarycol--:#bea473;
+    --Secondarycol--:#fee3b2;
     --white--:#ffffff;
-    --accent--:#203937;
+    --accent--:#253835;
     --accent2--:#4e6e6f ;
 }
 body {
@@ -27,7 +27,7 @@ body {
     height: auto;
 }
 .Background {
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.5)),url(../Images/back.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,0)),url(../Images/back.jpg);
     background-repeat: no-repeat, repeat;
     padding: 15px;
     position: relative;
@@ -39,7 +39,7 @@ body {
 }
 .Background-2{
     /* background-image: radial-gradient(circle, var(--Secondarycol--) 20%, var(--Maincolor--) 120%); */
-    background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,1)),url(../Images/menu-back.jpg);
+    background-image: linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.9)),url(../Images/menu-back.jpg);
     background-repeat: no-repeat;
     padding: 15px;
     width: 100%;
@@ -68,7 +68,7 @@ background: var(--Secondarycol--);
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: var(--blackcolor--); 
+background: var(--accent--); 
 }
 
 /* links */
@@ -126,15 +126,15 @@ a img .account-button{
     transition: all 0.3s ease 0s;
 }
 .dropbtn {
-    background-color: var(--accent--);
-    color: var(--Secondarycol--);
+    background-color: var(--white--);
+    color: var(--accent--);
     border: none;
     cursor: pointer;
 }
   
 .dropbtn:hover, .dropbtn:focus {
-background-color: var(--white--);
-color: var(--accent--);
+background-color: var(--accent--);
+color: var(--white--);
 }
 
 .dropdown {
@@ -466,7 +466,7 @@ footer{
     padding-bottom: 0px;
     padding-right: 20px;
     padding-left: 20px;
-    background-color: var(--blackcolor--);
+    background-color: var(--accent--);
     max-width: 100%;
     transition: background 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;  
 }
@@ -593,7 +593,7 @@ footer{
 }
 
 .footerBottom{
-    background-color: var(--blackcolor--);
+    background-color: var(--accent--);
     padding-top: 20px;
     padding-bottom: 40px;
     transition: all 0.5s, background 0.5s, border 0.5s, border-radius 0.5s, box-shadow 0.5s;
@@ -604,12 +604,12 @@ footer{
     text-align: center;
 }
 .SocialIcons{
-    background-color: var(--blackcolor--);
+    background-color: var(--accent--);
     display: flex;
     justify-content: center;
 }
 .SocialIcons a{
-    background-color: var(--blackcolor--); 
+    background-color: var(--accent--); 
     text-decoration: none;
     padding: 10px;
     background-color: var(--Secondarycol--);
@@ -619,13 +619,13 @@ footer{
 }
 .SocialIcons a i{
     font-size: 2em ;
-    color: black;
+    color: var(--accent--);
     opacity: 0.9;
     transition: all 0.5s ease 0s;
 }
 /* icon hover effect */
 .SocialIcons a:hover{
-    background-color: var(--blackcolor--);
+    background-color: var(--accent--);
 }
 .SocialIcons a:hover i{
     color: var(--Secondarycol--);
